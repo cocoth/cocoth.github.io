@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <title>Order</title>
+</head>
+<body>
+    <div class="paragraph">
+        <h2>Pesan sekarang</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <br>
+            sObcaecati corrupti officia odio fuga cum veritatis aspernatur
+            <br>
+            corporis cumque vel architecto, sapiente voluptatem explicabo asperiores
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur beatae ex dolor, magni rerum ullam veritatis odio modi harum. Harum enim consectetur, distinctio sed nihil dolore. Nihil, inventore ipsa?
+        </p>
+    </div>
+    <div class="parent">
+        <!-- <nav class="topnav" id="topnav">
+            <a href="./#Home">Home</a>
+            <a href="./#Testimoni">Testimoni</a>
+            <a href="./about-us.html">Tentang kami</a>
+            <a href="./order.html">Order</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
+          SCRIPT
+        <script>
+            function myFunction() {
+            var x = document.getElementById("topnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";}
+            }
+        </script>-->
+        <div class="box" id="box">
+            <h1>Order</h1>
+            <div class="container">
+                <form action="/submit.js" method="post" id="children">
+                    <div class="input-group">
+                        <input required="" type="text" name="Nama" autofocus autocomplete="off" class="input">
+                        <label class="user-label">Nama</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="text" name="Univ" autofocus autocomplete="off" class="input">
+                            <label class="user-label">Universitas</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="text" name="Prodi" autofocus autocomplete="off" class="input">
+                        <label class="user-label">Prodi</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="text" name="NPM" autofocus autocomplete="off" class="input">
+                        <label class="user-label">NPM/NIM</label>
+                    </div>
+                    </div>
+                    <div class="box-btn">
+                        <button class="cta">
+                            <span class="hover-underline-animation"> Order now </span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
