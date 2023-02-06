@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.light-mode {
+    background: linear-gradient(to right, #6ab1da, #8297d1,#d19dae);
+    color: black;
+}
+  
+.dark-mode {
+    background: linear-gradient(to right, #1e223d, #181f33,#251218);
+    color: white;
+}
 body{
-    background: linear-gradient(to right, #9fdcff, #baccff,#ffcfde);
+    /* background: linear-gradient(to right, #9fdcff, #baccff,#ffcfde); */
+    background: linear-gradient(to right, #6ab1da, #8297d1,#d19dae);
     background-repeat: initial ;
 }
 .parent{
@@ -18,7 +28,8 @@ body{
     text-decoration: none;
 } */
 .box{
-    background: linear-gradient(to bottom right, #ffaec8, #9fdcff);
+    /* background: linear-gradient(to bottom right, #ffaec8, #9fdcff); */
+    background: linear-gradient(to bottom right, #f592b2, #6091eb);
     /* padding:0 30px; */
     display: flex;
     flex-direction: column;
@@ -36,7 +47,7 @@ body{
 h1{
     color:#9be5fc;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-shadow: 2px 3px 2.5px rgb(83, 97, 122);
     cursor: pointer;
 }
@@ -107,7 +118,7 @@ h1:active{
    
 .input:focus ~ label, input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
-    background: #d5c2e0;
+    background: #bb8ec0;
     padding: 0 .2em;
     color: #1f1f1f;
     border-radius: 10px;
