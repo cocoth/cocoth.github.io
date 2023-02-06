@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/spinner.css">
     <link rel="stylesheet" href="./css/order.css">
     <title>Pesan Sekarang</title>
 </head>
-<body>
-    
+<body onload="removeSpinner()">
+    <div class="parent">
+      <div class="spinner" id="spinner"></div>
+    </div>
+    <script>
+      function removeSpinner() {
+        document.getElementById("spinner").style.display = "none";
+      }
+    </script>
+
     <i class="fas fa-sun" style="font-size: 36px;"></i>
     <script src="./js/mode.js"></script>
     <div class="paragraph">
