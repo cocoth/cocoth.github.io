@@ -45,7 +45,8 @@ body{
 }
 
 h1{
-    color:#9be5fc;
+    /* color:#9be5fc; */
+    color: white;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     text-shadow: 2px 3px 2.5px rgb(83, 97, 122);
