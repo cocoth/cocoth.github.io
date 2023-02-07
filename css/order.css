@@ -27,9 +27,25 @@ body{
 .paragraph h2{
     text-decoration: none;
 } */
-.box{
+.light-mode .box{
     /* background: linear-gradient(to bottom right, #ffaec8, #9fdcff); */
     background: linear-gradient(to bottom right, #f592b2, #6091eb);
+    /* padding:0 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 50px;
+    width: 400px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+.dark-mode .box{
+    /* background: linear-gradient(to bottom right, #ffaec8, #9fdcff); */
+    background: linear-gradient(to bottom right, #994b62, #27306d);
     /* padding:0 30px; */
     display: flex;
     flex-direction: column;
@@ -85,28 +101,63 @@ h1:active{
     margin-bottom: 10px;
     
 }
-   
 .input {
     border: solid 1.5px #4d4d4d;
     border-radius: 1rem;
     background: none;
     padding: 1rem;
-    /* width: 17rem; */
+    max-width : 14rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #1a395e;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}   
+.light-mode .input {
+    border: solid 1.5px #4d4d4d;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    max-width : 14rem;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     color: #1a395e;
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
 }
-   
+.dark-mode .input {
+    border: solid 1.5px #b9b9b9;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    max-width : 14rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #c4d6eb;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
 .user-label {
     position: absolute;
     left: 15px;
-    color: #444444b7;
+    color: #444444c7;
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4,0,0.2,1);
 }
-
+.light-mode .user-label {
+    position: absolute;
+    left: 15px;
+    color: #444444c7;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.dark-mode .user-label{
+    position: absolute;
+    left: 15px;
+    color: #bdbdbdc7;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
 @media screen and (max-width: 600px){
     .input{
         width: 10rem;
@@ -116,7 +167,7 @@ h1:active{
     outline: none;
     border: 1.5px solid #1a73e8;
 }
-   
+
 .input:focus ~ label, input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
     background: #bb8ec0;
@@ -126,6 +177,25 @@ h1:active{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem
 }
+
+/* .light-mode .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background: #bb8ec0;
+    padding: 0 .2em;
+    color: #1f1f1f;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem
+}
+.dark-mode .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background: #6e4166;
+    padding: 0 .2em;
+    color: #c9c1c1;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem
+} */
 
    /* btn */
 .box-btn{

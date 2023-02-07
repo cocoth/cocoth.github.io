@@ -1,0 +1,195 @@
+/* Root */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+:root{
+    --body-color: linear-gradient(to right, #6ab1da, #8297d1,#d19dae);
+    --text-input-color: #1a395e;
+    --primary-color: #f7f7f7;
+    --input-border: #4d4d4d;
+    --label-color: #444444c7;
+    --label-background: #bb8ec0;
+
+    /* Transitions */
+
+    --tran-02: all 0.2 ease;
+    --tran-03: all 0.3 ease;
+    --tran-04: all 0.4 ease;
+    --tran-05: all 0.5 ease;
+}
+
+body{
+    background: var(--body-color);
+    background-repeat: initial;
+    
+}
+body.light-mode{
+    --body-color: linear-gradient(to right, #6ab1da, #8297d1,#d19dae);
+    --box-color: linear-gradient(to bottom right, #f592b2, #6091eb);
+    --text-input-color: #263a52;
+    --primary-color: #f7f7f7;
+    --input-border: #4d4d4d;
+    --label-color: #444444c7;
+    --label-background: #bb8ec0;
+    --btn-color: #000000;
+
+    /* Transitions */
+
+    --tran-02: all 0.2 ease;
+    --tran-03: all 0.3 ease;
+    --tran-04: all 0.4 ease;
+    --tran-05: all 0.5 ease;
+}
+body.dark-mode{
+    --body-color: linear-gradient(to right, #1f2442, #181f33,#571a2c);
+    --box-color: linear-gradient(to bottom right, #994b62, #27306d);
+    --text-input-color: #9cacc0;
+    --primary-color: #ffffff;
+    --input-border: #c4c4c4;
+    --label-color: #d1d1d1c7;
+    --label-background: #6e4166;
+    --btn-color: #ffffff;
+}
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background: var(--box-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 50px;
+    width: 400px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    transition: var(--tran-05);
+}
+h1{
+    color: var(--primary-color);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 3px 2.5px rgb(60, 71, 88);
+    cursor: pointer;
+}
+h1:hover{
+    transform: translateX(0);
+}
+h1:active{
+    transform: scale(0.9);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group{
+    position: relative;
+    margin-bottom: 10px;
+}
+.input{
+    border: solid 1.5px var(--input-border);
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    max-width : 14rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: var(--text-input-color);
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+}
+.user-label{
+    position: absolute;
+    left: 15px;
+    color: var(--label-color);
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1); 
+}
+.input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+}
+.input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background: var(--label-background);
+    padding: 0 .2em;
+    color: var(--label-color);
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem
+}
+.box-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta {
+    border: none;
+    background: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+  
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+  
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+    color: var(--btn-color);
+}
+  
+.cta:hover svg {
+    transform: translateX(0);
+}
+  
+.cta:active svg {
+    transform: scale(0.9);
+}
+  
+.hover-underline-animation {
+    position: relative;
+    color: var(--btn-color);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+}
+  
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--btn-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+@media screen and (max-width: 600px){
+    .box{
+        padding: 0.5rem;
+        padding-bottom: 2rem;
+    }
+    .box h1{
+        font-size: 1.5rem;
+    }
+    .input{
+        width: 10rem;
+    }
+}
