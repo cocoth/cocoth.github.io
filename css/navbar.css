@@ -22,7 +22,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background: var(--primary-color);
-    padding-top: 37rem;
+    padding-top: 36rem;
 }
 .navigation{
     position: relative;
