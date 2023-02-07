@@ -40,7 +40,7 @@ body.light-mode{
     --tran-05: all 0.5 ease;
 }
 body.dark-mode{
-    --body-color: linear-gradient(to right, #1f2442, #181f33,#571a2c);
+    --body-color: linear-gradient(to right, #1f2442, #181f33,#3f0f27);
     --box-color: linear-gradient(to bottom right, #994b62, #27306d);
     --text-input-color: #9cacc0;
     --primary-color: #ffffff;
