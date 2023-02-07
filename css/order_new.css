@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 :root{
     --body-color: linear-gradient(to right, #6ab1da, #8297d1,#d19dae);
+    --box-color: linear-gradient(to bottom right, #f592b2, #6091eb);
     --text-input-color: #1a395e;
     --primary-color: #f7f7f7;
     --input-border: #4d4d4d;
@@ -61,7 +62,7 @@ body.dark-mode{
     align-items: center;
     padding: 1rem;
     padding-bottom: 50px;
-    width: 400px;
+    width: 25rem;
     margin: 10px;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -181,7 +182,19 @@ h1:active{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 767px){
+    .box{
+        padding: 0.5rem;
+        padding-bottom: 2rem;
+    }
+    .box h1{
+        font-size: 1.5rem;
+    }
+    .input{
+        width: 10rem;
+    }
+}
+@media only screen and (max-width: 768px){
     .box{
         padding: 0.5rem;
         padding-bottom: 2rem;
